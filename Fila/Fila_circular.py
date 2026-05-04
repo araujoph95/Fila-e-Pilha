@@ -25,7 +25,7 @@ class Fila_Circular:
         if self.quant == 0:
             return
         for i in range(self.quant):
-            print(self.vetor[(self.inicio + 1) % self.tam], end=' ')
+            print(self.vetor[(self.inicio + i) % self.tam], end=' ')
         print()
 
     def esta_vazia(self):
