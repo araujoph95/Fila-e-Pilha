@@ -7,9 +7,9 @@ class pilha_estatica:
     def show(self):
         if self.quant == 0:
             return
-        for i in range(self.quant - 1, 0, -1):
+        for i in range(self.quant - 1, -1, -1):
             print(self.vetor[i], end=" ")
-        print
+        print()
 
     def push(self, valor):
         if self.quant >= self.tam_maximo:
